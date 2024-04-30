@@ -79,14 +79,14 @@ p {
 
 /* Background-color set-up */
 
-body {
-    background-color: #FCF8FF;
-}
-
 nav, .purplebackground {
     background-color: #24053E;
 }
 
-header {
+header { 
     background-color: #24053E;
+}
+
+.aBackground {
+    background-color: #FCF8FF;
 }
