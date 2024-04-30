@@ -1,0 +1,92 @@
+/* 
+Primary colors
+Dark purple: #24053E
+Flashy green: #44FFA1
+Purply braun: #584D62
+
+Secondary colors
+Light purpely grey : #FCF8FF
+white : #FFFFFF
+*/
+
+/* Fonts set-up */
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&display=swap");
+
+h1 {
+    font-family: "Fraunces", serif;
+    font-size: 4.44rem;
+    font-weight: 600;
+    line-height: 4.44rem;
+    color: #FFFFFF;
+}
+
+h2 {
+    font-family: "Fraunces", serif;
+    font-size: 3.11rem;
+    font-weight: 600;
+    line-height: 3.56rem;
+    color: #FFFFFF;
+}
+
+h3 {
+    font-family: "Fraunces", serif;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.22 rem;
+    color: #24053E;
+}
+
+p {
+    font-family: "Manrope", sans-serif;
+    line-height: 2rem;
+    color:  #584D62;
+}
+
+.pWhite {
+    color: #FFFFFF;
+    font-weight: 200;
+}
+
+/* Button set-up */
+
+.primarybutton {
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+    background-color: #44FFA1;
+    padding: 1rem 2rem;
+}
+
+.primarybutton:hover {
+    color: #44FFA1;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0.2rem solid #44FFA1;
+}
+
+.secondarybutton {
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+    color: #FFFFFF;
+    border-bottom: 0.2rem solid #44FFA1;
+    padding-bottom: 0.3rem;
+}
+
+.secondarybutton:hover {
+    color: #44FFA1;
+}
+
+/* Background-color set-up */
+
+body {
+    background-color: #FCF8FF;
+}
+
+nav, .purplebackground {
+    background-color: #24053E;
+}
+
+header {
+    background-color: #24053E;
+}
