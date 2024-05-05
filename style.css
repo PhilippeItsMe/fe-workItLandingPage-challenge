@@ -108,7 +108,7 @@ header:before {
     height: 100%;
     background-color: #24053e;
     border-radius: 0 0 50% 50%;
-    transform: scaleX(1.5)
+    transform: scaleX(1.5);
 }
 
 header { 
@@ -127,9 +127,12 @@ header section {
 /* Background-color set-up  */
 
 main .art1 :before {
+    width: 100%;
+    height: 80%;
     background-color:  #6a3493;
     border-radius: 0 0 50% 50%;
     transform: scaleX(1.5)
+    
 }
 
 header { 
@@ -303,7 +306,6 @@ footer div img {
         padding: 10rem 6rem 4rem 6rem; 
         display: grid;
         grid-template-columns: 100px, 1fr;
-        grid-template-rows: repeat(6, 1fr);
         grid-template-areas: 
             "n1 h31"
             "n1 p1"
@@ -354,23 +356,24 @@ footer div img {
 
     .n1, .n2, .n3 {
         margin: 0;
+        margin-bottom: 2rem;
         justify-self: center;
-       
-
     }
     .h31, .h32, .h33 {
-        margin-bottom: 0.5rem;
+        margin: 0;
+        
         justify-self: center;
+        align-self: center;
     }
     .p1, .p2, .p3 {
         text-align: center;
+        align-self: start;
     }
     .art1 {
         padding: 10rem 6rem 2rem 6rem; 
             display: grid;
             grid-template-columns: repeat (3, 1fr);
-            grid-template-rows: 100px, 100px, 1fr;
-            gap: 1rem;
+            gap: 2rem;
             grid-template-areas: 
                 "n1 n2 n3"
                 "h31 h32 h33"
