@@ -13,34 +13,48 @@ white : #FFFFFF
 
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&display=swap");
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
 h1 {
     font-family: "Fraunces", serif;
-    font-size: 4.44rem;
+    font-size: 2.5rem;
     font-weight: 600;
-    line-height: 4.44rem;
+    line-height: 3rem;
     color: #FFFFFF;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 h2 {
     font-family: "Fraunces", serif;
-    font-size: 3.11rem;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 400;
     line-height: 3.56rem;
     color: #FFFFFF;
+    text-align: center;
 }
 
 h3 {
     font-family: "Fraunces", serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     line-height: 2.22 rem;
     color: #24053E;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 p {
     font-family: "Manrope", sans-serif;
-    line-height: 2rem;
+    line-height: 1.8rem;
     color:  #584D62;
+    text-align: center;
 }
 
 .pWhite {
@@ -56,6 +70,7 @@ p {
     text-decoration: none;
     background-color: #44FFA1;
     padding: 1rem 2rem;
+    border: 0.2rem solid rgba(0, 0, 0, 0);
 }
 
 .primarybutton:hover {
@@ -66,7 +81,6 @@ p {
 
 .secondarybutton {
     font-family: "Manrope", sans-serif;
-    font-weight: 800;
     text-decoration: none;
     color: #FFFFFF;
     border-bottom: 0.2rem solid #44FFA1;
@@ -83,10 +97,284 @@ nav, .purplebackground {
     background-color: #24053E;
 }
 
+/* Background-color set-up | Curved bottom Header */
+
+header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #24053e;
+    border-radius: 0 0 50% 50%;
+    transform: scaleX(1.5)
+}
+
 header { 
-    background-color: #24053E;
+    position:relative;
+    z-index: 0;
+}
+
+header section {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Background-color set-up  */
+
+main .art1 :before {
+    background-color:  #6a3493;
+    border-radius: 0 0 50% 50%;
+    transform: scaleX(1.5)
+}
+
+header { 
+    position:relative;
+    z-index: 0;
 }
 
 .aBackground {
     background-color: #FCF8FF;
 }
+
+/* Section Nav set-up */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+}
+
+/* Section Header set-up */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 0 2rem;
+}
+
+.deco1, .deco2 {
+    display: none;
+}
+
+.mobile {
+    align-self: center;
+    height: 13rem;
+    width: auto;
+    padding: 3rem 0 0 0;
+    margin-bottom: -5.5rem;
+}
+
+/* Section Article One set-up */
+
+.art1 {
+    padding: 6rem 2rem 4rem 2rem; 
+}
+
+.number {
+    font-weight: 600;
+    border: 0.1rem solid #645a6c89;
+    border-radius: 90%;
+    height: 3rem;
+    width: 3rem;
+    line-height: 2.8rem;
+    margin: 3rem auto 2rem auto;
+}
+
+/* Section Article Two set-up */
+
+.art2 {
+    padding: 6rem 1rem 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.bossImage {
+    width: 90%;
+    margin-bottom: -3rem; 
+}
+
+.purplebackground {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.purplebackground p {
+    margin-bottom: 1rem;
+}
+
+.deco3 {
+    display: none;
+}
+
+/* Section Footer set-up */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 15rem;
+}
+
+footer div img {
+    margin: 0 1rem;
+}
+
+/* Responsive - Tablet */
+
+@media screen and (min-width:770px) { 
+
+    /* Header */
+
+    .deco1, .deco2 {
+        display: initial;
+    }
+    .deco1 {
+        position:absolute;
+        top: -5rem;
+        left: -15rem;
+    }
+    .deco2 {
+        position:absolute;
+        top: 2rem;
+        right: -3rem;
+    }
+    .mobile {
+        height: 16rem;
+    }
+
+    /* Article 1 */
+
+    .n1 {
+        grid-area: n1
+    }
+    .h31 {
+        grid-area: h31;
+    }
+    .p1 {
+        grid-area: p1;
+    }
+    .n2 {
+        grid-area: n2;
+    }
+    .h32 {
+        grid-area: h32;
+    }
+    .p2 {
+        grid-area: p2;
+    }
+    .n3 {
+        grid-area: n3;
+    }
+    .h33 {
+        grid-area: h33;
+    }
+    .p3 {
+        grid-area: p3;
+    }
+    .n1, .n2, .n3 {
+        margin-right: 1.5rem;
+    }
+    .h31, .h32, .h33 {
+        margin-top: 3rem;
+        margin-bottom: 0.5rem;
+        align-self: end;
+        justify-self: left;
+    }
+    .p1, .p2, .p3 {
+        align-self: end;
+        text-align: left;
+    }
+    .art1 {
+        padding: 10rem 6rem 4rem 6rem; 
+        display: grid;
+        grid-template-columns: 100px, 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+            "n1 h31"
+            "n1 p1"
+            "n2 h32"
+            "n2 p2"
+            "n3 h33"
+            "n3 p3";
+    }
+
+    /* Article 1 */
+
+    .bossImage {
+        width: 281px;
+        height: 281px;
+        grid-area: bossImage;
+    }
+
+    .purplebackground {
+        position: relative;
+        align-items: start;
+        grid-area: purplebackground;
+        padding: 3rem;
+    }
+    .purplebackground p {
+        text-align: left;
+    }
+
+    .deco3 {
+        display: initial;
+        position: absolute;
+        right: 2rem;
+        bottom: -4rem;
+    }
+
+    .art2 {
+        display: grid;
+        grid-template-columns: 150px, 1fr;
+        grid-template-rows: 150px, 1fr;
+        grid-template-areas: 
+            "bossImage ."
+            ". purplebackground";
+       
+    }
+
+/* Responsive - Desktop */
+
+@media screen and (min-width:1100px) { 
+
+    .n1, .n2, .n3 {
+        margin: 0;
+        justify-self: center;
+       
+
+    }
+    .h31, .h32, .h33 {
+        margin-bottom: 0.5rem;
+        justify-self: center;
+    }
+    .p1, .p2, .p3 {
+        text-align: center;
+    }
+    .art1 {
+        padding: 10rem 6rem 2rem 6rem; 
+            display: grid;
+            grid-template-columns: repeat (3, 1fr);
+            grid-template-rows: 100px, 100px, 1fr;
+            gap: 1rem;
+            grid-template-areas: 
+                "n1 n2 n3"
+                "h31 h32 h33"
+                "p1 p2 p3";
+        }
+    }
+}   
