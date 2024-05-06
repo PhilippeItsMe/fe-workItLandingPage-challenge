@@ -97,14 +97,14 @@ nav, .purplebackground {
     background-color: #24053E;
 }
 
-/* sBackground-color set-up | Curved bottom Header */
+/* Background-color set-up | Curved bottom Header */
 
 header:before {
     content: '';
     position: absolute;
     top: 0;
-    right: 0;
-    width: 80%;
+    left: 0;
+    width: 100%;
     height: 100%;
     background-color: #24053e;
     border-radius: 0 0 50% 50%;
@@ -343,8 +343,8 @@ footer div img {
 
     .art2 {
         display: grid;
-        grid-template-columns: 150px, 1fr;
-        grid-template-rows: 150px, 1fr;
+        grid-template-columns: 150px 1fr;
+        grid-template-rows: 150px 1fr;
         grid-template-areas: 
             "bossImage ."
             ". purplebackground";
