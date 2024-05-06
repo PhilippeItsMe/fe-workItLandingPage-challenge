@@ -103,12 +103,13 @@ header:before {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 80%;
     height: 100%;
     background-color: #24053e;
     border-radius: 0 0 50% 50%;
     transform: scaleX(1.5);
+    
 }
 
 header { 
