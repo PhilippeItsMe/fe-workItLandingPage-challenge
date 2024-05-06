@@ -343,8 +343,8 @@ footer div img {
 
     .art2 {
         display: grid;
-        grid-template-columns: 150px 1fr;
-        grid-template-rows: 150px 1fr;
+        grid-template-columns: 180px 1fr;
+        grid-template-rows: 80px 1fr;
         grid-template-areas: 
             "bossImage ."
             ". purplebackground";
@@ -372,13 +372,32 @@ footer div img {
     }
     .art1 {
         padding: 10rem 6rem 2rem 6rem; 
-            display: grid;
-            grid-template-columns: repeat (3, 1fr);
-            gap: 2rem;
-            grid-template-areas: 
+        display: grid;
+        grid-template-columns: repeat (3, 1fr);
+        gap: 2rem;
+        grid-template-areas: 
                 "n1 n2 n3"
                 "h31 h32 h33"
                 "p1 p2 p3";
         }
+
+    .bossImage {
+        width: 350px;
+        height:350px;
+        grid-area: bossImage;
+    }
+
+    .art2 {
+        margin: 5rem 15rem 0 8rem;
+        display: grid;
+        grid-template-columns: 230px 1fr;
+        grid-template-rows: 100px 1fr;
+        grid-template-areas: 
+                "bossImage ."
+                ". purplebackground";
+           
+        }
+
+
     }
 }   
