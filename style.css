@@ -100,6 +100,12 @@ nav, .purplebackground {
     background-color: #24053E;
 }
 
+header {
+    background-color: #FCF8FF;
+}
+
+
+
 /* Background-color set-up | Curved bottom Header */
 
 header { 
@@ -107,15 +113,17 @@ header {
     z-index: 0;
 }
 
-/* Background-color set-up  */
-
-header {
-    max-width: 100%;
+header div:before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
     background-color:  #24053E;
-}
-
-.aBackground {
-    background-color: #FCF8FF;
+    border-radius: 0 0 50% 50%;
+    transform: scaleX(1.5);
 }
 
 /* Section Nav set-up */
@@ -130,20 +138,12 @@ nav {
 
 /* Section Header set-up */
 
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    padding: 0 2rem;
-}
-
-header section {
-    z-index: 1;
+header div section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 2rem;
 }
 
 .deco1, .deco2 {
@@ -158,7 +158,7 @@ header section {
     margin-bottom: -5.5rem;
 }
 
-/* Section Article One set-up */
+/* Section Article 1 Set-up */
 
 .art1 {
     padding: 6rem 2rem 4rem 2rem; 
@@ -174,7 +174,7 @@ header section {
     margin: 3rem auto 2rem auto;
 }
 
-/* Section Article Two set-up */
+/* Section Article 2 Set-up */
 
 .art2 {
     padding: 6rem 1rem 4rem 1rem;
